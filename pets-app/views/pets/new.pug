@@ -1,0 +1,6 @@
+extends ../base.pug
+
+block content
+  form(action=`/owners/${owner.id}/pets/`, method="POST")
+    input(type="text", name="name")
+    input(type="submit", value="Add pet")

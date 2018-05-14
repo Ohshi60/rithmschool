@@ -1,0 +1,8 @@
+extends ../base.pug
+
+block content
+
+  h1 #{owner.name}
+
+  each pet in owner.pets
+    p #{pet.name}

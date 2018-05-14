@@ -1,0 +1,9 @@
+extends ../base.pug
+
+block content
+
+  h1 Create New Owner
+
+  form(action="/owners", method="POST")
+    input(type="text", name="name")
+    input(type="submit", value="Submit")

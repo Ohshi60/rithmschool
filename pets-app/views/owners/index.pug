@@ -1,0 +1,8 @@
+extends ../base.pug
+
+block content
+  h1 Owner index
+  each owner in owners
+    p #{owner.name}
+    a(href=`/owners/${owner.id}`) Check out owner
+    

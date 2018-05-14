@@ -1,0 +1,7 @@
+extends base.pug
+
+block content
+  h1 Shopping list
+  each item in shoppingList
+    h3 #{item.name}
+    p #{item.price}

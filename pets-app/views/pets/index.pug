@@ -1,0 +1,9 @@
+extends ../base.pug
+
+block content
+  a(href=`/owners/${owner.id}/pets/new`) Create a new pet
+  h1 Welcome to the owner page for #{owner.name}
+  ul
+    each pet in owner.pets
+      li #{pet.name} &nbsp;
+        a(href=`/owners/${owner.id}/pets/${pet.id}/edit`) Edit
